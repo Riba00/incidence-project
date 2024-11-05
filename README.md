@@ -82,14 +82,6 @@ En caso de problemas por permisos de archivos, puedes ejecutar el siguiente coma
 chmod -R 777 .
 ```
 
-En Ubuntu funciona correctamente pero en Windows pueden aparecer errores, prueba de ejecutar los siguientes comandos dentro del contenedor:
-
-```
-composer install
-npm install
-npm run build
-```
-
 #### Acceder a la aplicación
 
 Una vez que la aplicación esté en ejecución, puedes acceder a ella en la siguiente URL:

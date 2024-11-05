@@ -25,6 +25,8 @@ WORKDIR /var/www
 # Copiar todos los archivos
 COPY . .
 
+RUN rm -rf node_modules package-lock.json
+
 # Instalar dependencias de PHP y JavaScript
 RUN composer install && npm install && npm run build
 
