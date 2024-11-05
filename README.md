@@ -2,13 +2,12 @@
 
 ## Índice
 
-1. [Explicación del Proyecto](#explicación-del-proyecto)
-2. [Docker: Build y Comandos Útiles](#docker-build-y-comandos-útiles)
-3. [Roles y Funciones](#roles-y-funciones)
+1. [Explicación del Proyecto](#explicacion-del-proyecto)
+2. [Docker: Build y Comandos Útiles](#docker-build-y-comandos-utiles)
 
 ---
 
-### 1. Explicación del Proyecto
+### 1. Explicación del Proyecto <a name="explicacion-del-proyecto"></a>
 
 Este proyecto es una **aplicación web de gestión de incidencias** diseñada para facilitar el seguimiento y la administración de problemas o solicitudes dentro de una organización. La aplicación cuenta con una interfaz web para gestionar incidencias y una **API** para integraciones externas, permitiendo listar incidencias según los permisos del usuario.
 
@@ -40,7 +39,7 @@ DB_USERNAME=user
 DB_PASSWORD=secret
 ```
 
-### 2. Docker: Build y Comandos Útiles
+### 2. Docker: Build y Comandos Útiles <a name="docker-build-y-comandos-utiles"></a>
 
 El proyecto utiliza **Docker** para simplificar el despliegue y la configuración del entorno de desarrollo. A continuación, se detallan algunos comandos útiles:
 
