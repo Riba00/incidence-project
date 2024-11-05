@@ -23,8 +23,8 @@ El sistema de gestión de incidencias tiene implementados dos roles principales 
 Para clonear el proyecto, utiliza el siguiente comando:
 
 ```bash
-git clone 
-cd git
+git clone https://github.com/Riba00/incidence-project.git
+cd incidence-project
 cp .env.example .env
 ```
 
@@ -74,6 +74,20 @@ Para migrar la base de datos y ejecutar los seeders, utiliza el siguiente comand
 ```
 docker exec -it laravel_app bash
 php artisan migrate --seed
+```
+
+En caso de problemas por permisos de archivos, puedes ejecutar el siguiente comando:
+
+```
+chmod -R 777 .
+```
+
+En Ubuntu funciona correctamente pero en Windows pueden aparecer errores, prueba de ejecutar los siguientes comandos dentro del contenedor:
+
+```
+composer install
+npm install
+npm run build
 ```
 
 #### Acceder a la aplicación
