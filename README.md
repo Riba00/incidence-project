@@ -69,11 +69,13 @@ docker-compose down
 
 ### Ejecutar comandos en el contenedor
 
-Para migrar la base de datos y ejecutar los seeders, utiliza el siguiente comando:
+Para migrar la base de datos, ejecutar los seeders y generar la clave de la aplicación, puedes ejecutar los siguientes comandos:
 
 ```
 docker exec -it laravel_app bash
 php artisan migrate --seed
+php artisan key:generate
+php artisan optimize
 ```
 
 En caso de problemas por permisos de archivos, puedes ejecutar el siguiente comando:
