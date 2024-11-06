@@ -47,7 +47,9 @@ final class IncidencesTable extends PowerGridComponent
     {
         return PowerGrid::fields()
             ->add('title')
-            ->add('description')
+            ->add('description', function ($incidence){
+                return substr($incidence->description, 0, 50). '...';
+            })
             ->add('status')
             ->add('status_label', function (Incidence $model) {
                 return match ($model->status) {

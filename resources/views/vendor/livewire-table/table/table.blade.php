@@ -40,7 +40,7 @@
         @forelse($paginator->items() as $item)
             <tr class="group"
                 wire:key="row-{{ $item->getKey() }}"
-
+                wire:navigate
                 @if($this->isReordering())
                     draggable="true"
                     x-on:dragstart="e => e.dataTransfer.setData('key', '{{ $item->getKey() }}')"
